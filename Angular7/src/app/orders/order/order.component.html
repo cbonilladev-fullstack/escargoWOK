@@ -63,11 +63,12 @@
                 <td>{{item.Total}}</td>
                 <td>
                     <a class="btn btn-sm btn-info text-white" (click)="AddOrEditOrderItem(i,service.formData.OrderID)"><i class="fa fa-pencil"></i></a>
+                    <a class="btn btn-sm btn-danger text-white ml-1" (click)="onDeleteOrderItem(item.OrderItemID,i,service.formData.OrderID)"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         </tbody>
     </table>
     <div class="form-group">
-        <button type="submit" class="btn btn-dark"><i class="fa fa-database"></i>Submit</button>
+        <button type="submit" class="btn btn-dark"><i class="fa fa-database" style="padding-right: 10px"></i>Submit</button>
     </div>
 </form>
