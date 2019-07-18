@@ -19,7 +19,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">$</div>
                 </div>
-                <input name="Price" #Price="ngModel" [(ngModel)]="formData.Price" class="form-control" (change)="updatePrice($event.target)">
+                <input name="Price" #Price="ngModel" [(ngModel)]="formData.Price" class="form-control" (change)="updatePrice($event.target)" readonly>
             </div>
     </div>
     <div class="form-group col-md-6">
